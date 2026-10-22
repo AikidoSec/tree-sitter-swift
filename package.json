@@ -1,12 +1,11 @@
 {
   "name": "tree-sitter-swift",
-  "version": "0.21.0",
+  "version": "0.21.1",
   "description": "A tree-sitter grammar for the Swift programming language.",
   "main": "bindings/node/index.js",
   "types": "bindings/node",
   "scripts": {
     "install": "node-gyp-build",
-    "postinstall": "node-gyp configure && node-gyp build",
     "build": "tree-sitter generate --no-bindings",
     "build-wasm": "tree-sitter build --wasm",
     "ci": "prettier --check grammar.js",
